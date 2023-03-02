@@ -1,0 +1,42 @@
+body {
+  --backgroundColor: #FFF;
+  --headlineColor: #000;
+  --bodyColor: #000;
+  --border: #E5EBEB;
+  --buttonFilledLabel: #FFF;
+  --buttonFilledBackground: #285CE6;
+  --buttonFilledBackgroundHover: #164CDC;
+  --surfaceBackground: #FFF;
+  --surfaceColor: #000;
+  --surfaceBorder: var(--border);
+  --overlay: rgba(0,0,0,0.2);
+  background-color: var(--backgroundColor);
+}
+
+body .theme--light-gray {
+  --backgroundColor: #F2F5F5;
+  --headlineColor: #000;
+  --bodyColor: #000;
+  --border: #E5EBEB;
+  --buttonFilledLabel: #FFF;
+  --buttonFilledBackground: #285CE6;
+  --buttonFilledBackgroundHover: #164CDC;
+  --surfaceBackground: #FFF;
+  --surfaceColor: #000;
+  --surfaceBorder: var(--border);
+	background-color: var(--backgroundColor);
+}
+
+body .theme--dark-gray {
+  --backgroundColor: #212121;
+  --headlineColor: #FFF;
+  --bodyColor: #FFF;
+  --border: #333;
+  --buttonFilledLabel: #FFF;
+  --buttonFilledBackground: #285CE6;
+  --buttonFilledBackgroundHover: #164CDC;
+  --surfaceBackground: #333;
+  --surfaceColor: #FFF;
+  --surfaceBorder: var(--border);
+	background-color: var(--backgroundColor);
+}

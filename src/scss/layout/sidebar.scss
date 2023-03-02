@@ -1,0 +1,21 @@
+/* Layout / Sidebar
+-----------------------------------------------------------------------*/
+.l-sidebar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space);
+}
+
+.l-sidebar > :first-child {
+  /* ↓ The width when the sidebar _is_ a sidebar */
+  flex-basis: 20rem;
+  flex-grow: 1;
+}
+
+.l-sidebar > :last-child {
+  /* ↓ Grow from nothing */
+  flex-basis: 0;
+  flex-grow: 999;
+  /* ↓ Wrap when the elements are of equal width */
+  min-inline-size: 50%;
+}

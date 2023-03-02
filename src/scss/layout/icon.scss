@@ -1,0 +1,17 @@
+/* Layout / Icon
+-----------------------------------------------------------------------*/
+.icon {
+  width: 0.75em;
+  width: 1cap;
+  height: 0.75em;
+  height: 1cap;
+}
+
+.l-with-icon {
+  display: inline-flex;
+  align-items: baseline;
+}
+
+.l-with-icon .icon {
+  margin-inline-end: var(--space-025);
+}

@@ -1,0 +1,22 @@
+/* Layout / Box
+-----------------------------------------------------------------------*/
+.l-box {
+  display: block;
+  padding: var(--padding);
+  color: var(--surfaceColor);
+  background-color: var(--surfaceBackground);  
+  border-radius: var(--radius);
+  border: 1px solid var(--surfaceBorder); 
+  /* ↓ For high contrast mode */
+  outline: var(--border-thick) solid transparent;
+  outline-offset: calc(var(--border-thick) * -1);
+}
+
+.l-box * {
+  color: inherit;
+}
+
+.l-box.invert {
+  color: var(--surfaceColor);
+  background-color: var(--color-dark);
+}

@@ -1,0 +1,165 @@
+/* Base / Typography
+-----------------------------------------------------------------------*/
+body {
+	--fontFamilyBrand: 'Open Sans', Arial, sans-serif;
+	
+	--fontWeightLight: 300;
+	--fontWeightRegular: 400;
+	--fontWeightSemiBold: 600;
+	--fontWeightBold: 800;
+
+  --fontSize050: calc(var(--fontSize) * .75);
+  --fontSize075: calc(var(--fontSize) * .875);
+  --fontSize: 1rem;
+  --fontSize150: calc(var(--fontSize) * 1.125);
+  --fontSize200: calc(var(--fontSize) * 1.25);
+  --fontSize250: calc(var(--fontSize) * 1.375);
+  --fontSize300: calc(var(--fontSize) * 1.5);
+  --fontSize400: calc(var(--fontSize) * 1.6875);
+  --fontSize500: calc(var(--fontSize) * 2);
+  --fontSize600: calc(var(--fontSize) * 2.375);
+  --fontSize700: calc(var(--fontSize) * 2.875);
+  --fontSize800: calc(var(--fontSize) * 3.25); 
+	--fontSize900: calc(var(--fontSize) * 3.875);
+	--fontSize1000: calc(var(--fontSize) * 4.6875);
+	
+	--lineHeightHeadline: 1.1;
+	--lineHeightBody: 1.4;
+	--lineHeightLabel: 1;
+
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0 0 0.75rem 0;
+	margin: 0 0 var(--xs) 0;
+}
+.display--level-1 {
+	font-weight: 300;
+	font-stretch: normal;
+	color: var(--headlineColor);
+	max-width: 26ch;
+	font-size: 3em;
+	line-height: 110%;
+	letter-spacing: -0.025em;
+	font-size: clamp(3em, -4.3001rem + 9.8901vw, 5.25em);
+}
+@media screen and (min-width:85.375em) {
+	.display--level-1 {
+		line-height: 0.95235;
+		letter-spacing: -0.03575em;
+	}
+}
+h1, .display--level-2 {
+	font-weight: 300;
+	font-stretch: normal;
+	color: var(--headlineColor);
+	max-width: 32ch;
+	font-size: 2.75em;
+	line-height: 110%;
+	letter-spacing: -0.02275em;
+	font-size: clamp(2.75em, -1.3056rem + 5.4945vw, 4em);
+}
+@media screen and (min-width:85.375em) {
+	h1, .display--level-2 {
+		line-height: 110%;
+		letter-spacing: -0.03125em;
+	}
+}
+@media print {
+	h1, .display--level-2 {
+		font-size: 41pt;
+		line-height: 110%;
+	}
+}
+h2, .headline--level-1 {
+	font-weight: 600;
+	font-stretch: normal;
+	color: var(--headlineColor);
+	max-width: 35ch;
+	font-size: 2.125em;
+	line-height: 110%;
+	letter-spacing: -0.0148em;
+	font-size: clamp(2.125em, -0.7139rem + 3.8462vw, 3em);
+}
+@media screen and (min-width:85.375em) {
+	h2, .headline--level-1 {
+		line-height: 1.1;
+		letter-spacing: -0.020915em;
+	}
+}
+@media print {
+	h2, .headline--level-1 {
+		font-size: 26pt;
+		line-height: 30pt;
+	}
+}
+h3, .headline--level-2 {
+	font-weight: 500;
+	font-stretch: normal;
+	color: var(--headlineColor);
+	max-width: 50ch;
+	font-size: 1.5em;
+	line-height: 1.08325;
+	letter-spacing: -0.00835em;
+	font-size: clamp(1.5em, 0.2833rem + 1.6484vw, 1.875em);
+}
+@media screen and (min-width:85.375em) {
+	h3, .headline--level-2 {
+		line-height: 1.2;
+		letter-spacing: -0.01675em;
+	}
+}
+@media print {
+	h3, .headline--level-2 {
+		font-size: 15pt;
+		line-height: 20pt;
+	}
+}
+h4, .size-4, p.subhead {
+	font-weight: 500;
+	font-stretch: normal;
+	color: var(--headlineColor);
+	max-width: 60ch;
+	font-size: 1.1875em;
+	line-height: 1.3125;
+	letter-spacing: 0;
+	font-size: clamp(1.1875em, 0.1736rem + 1.3736vw, 1.5em);
+}
+@media screen and (min-width:85.375em) {
+	h4, .size-4, p.subhead {
+		line-height: 1.2;
+		letter-spacing: -0.00825em;
+	}
+}
+@media print {
+	h4, .size-4, p.subhead {
+		font-size: 12pt;
+		line-height: 18pt;
+	}
+}
+h5, .size-5, p.section-title {
+	font-weight: 500;
+	font-stretch: normal;
+	color: var(--headlineColor);
+	max-width: 75ch;
+	font-size: 1em;
+	font-size: clamp(1em, 0.5944rem + 0.5495vw, 1.125em);
+	line-height: 1.3125;
+	letter-spacing: 0;
+}
+@media print {
+	h5, .size-5, p.section-title {
+		font-size: 10pt;
+		line-height: 13pt;
+	}
+}
+p, .size-6, h6, .body-copy {
+	font-weight: 400;
+	font-stretch: normal;
+	color: #212936;
+	color: var(--bodyColor);
+	max-width: 75ch;
+	font-size: 1em;
+	font-size: clamp(1em, 0.5944rem + 0.5495vw, 1.125em);
+	line-height: 1.3125;
+	letter-spacing: 0;
+}

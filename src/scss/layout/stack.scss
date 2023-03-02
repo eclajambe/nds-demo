@@ -1,0 +1,11 @@
+/* Layout / Stack
+-----------------------------------------------------------------------*/
+.l-stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.l-stack > * + * {
+  margin-top: var(--space-3);
+}

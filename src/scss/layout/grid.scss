@@ -1,0 +1,15 @@
+/* Layout / Grid
+-----------------------------------------------------------------------*/
+.l-grid {
+  --min: 15rem;
+  align-content: start;
+  display: grid;
+  gap: var(--space);
+  grid-template-columns: 100%;
+}
+
+@supports (width: min(250px, 100%)) {
+  .l-grid {
+    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+  }
+}

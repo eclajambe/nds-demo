@@ -1,0 +1,30 @@
+/* Base / Space
+-----------------------------------------------------------------------*/
+:root {
+  --space-0125: calc(var(--space) * .125);
+  --space-025: calc(var(--space) * .25);
+  --space-05: calc(var(--space) * .5);
+  --space-075: calc(var(--space) * .75);
+  --space: 1rem;
+  --space-2: calc(var(--space) * 1.25);
+  --space-3: calc(var(--space) * 1.5);
+  --space-4: calc(var(--space) * 2);
+  --space-5: calc(var(--space) * 2.5);
+  --space-6: calc(var(--space) * 3);
+  --space-7: calc(var(--space) * 4);
+  --space-8: calc(var(--space) * 5);
+  --space-9: calc(var(--space) * 6);
+  --space-10: calc(var(--space) * 7); 
+  --space-11: calc(var(--space) * 8);
+  --padding: var(--space-3);
+  --organismPadding: var(--space-5) var(--space);
+} 
+@media screen and (min-width: 31.25em) {
+  :root {
+    --organismPadding: var(--space-6) var(--space);   
+  }
+}
+
+.brick {
+  padding: var(--organismPadding);
+}

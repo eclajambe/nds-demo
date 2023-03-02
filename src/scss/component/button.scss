@@ -1,0 +1,12 @@
+/* Component / Button
+-----------------------------------------------------------------------*/
+.button {
+  background-color: var(--buttonFilledBackground);
+  color: var(--buttonFilledLabel);
+  padding: var(--space-05) var(--space);
+  text-decoration: none;
+  border-radius: var(--radius-sm);
+  &:hover {
+    background-color: var(--buttonFilledBackgroundHover);
+  }
+}

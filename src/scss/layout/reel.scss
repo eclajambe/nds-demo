@@ -1,0 +1,41 @@
+/* Layout / Reel
+-----------------------------------------------------------------------*/
+.l-reel {
+  display: flex;
+  block-size: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-color: #fff #000;
+  padding-bottom: var(--space);
+}
+
+.l-reel::-webkit-scrollbar {
+  block-size: var(--space);
+}
+
+.l-reel::-webkit-scrollbar-track {
+  background-color: #000;
+}
+
+.l-reel::-webkit-scrollbar-thumb {
+  background-color: #000;
+  background-image: linear-gradient(#000 0, #000 0.25rem, #fff 0.25rem, #fff 0.75rem, #000 0.75rem);
+}
+
+.l-reel > * {
+  flex: 0 0 auto;
+}
+
+.l-reel > img {
+  block-size: 100%;
+  flex-basis: auto;
+  width: auto;
+}
+
+.l-reel > * + * {
+  margin-inline-start: var(--space);
+}
+
+.l-reel.overflowing {
+  padding-block-end: var(--space);
+}

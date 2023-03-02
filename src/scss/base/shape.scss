@@ -1,0 +1,12 @@
+/* Base / Shape
+-----------------------------------------------------------------------*/
+:root {
+  /* Border */
+  --border: 4px solid black;
+  --border-thick: 4px;
+  /* Border Radius */
+  --radius-sm: calc(var(--radius) * 0.5);
+  --radius: 0.25rem;
+  --radius-lg: calc(var(--radius) * 2);
+  --radius-circle: 25%/50%;
+}
